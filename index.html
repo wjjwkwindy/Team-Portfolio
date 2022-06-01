@@ -10,6 +10,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"></script>
+        <script>
+            const aegis = new Aegis({
+                id: 'p0ya8uk3qzma1Zy9V9', // 上报 id
+                uin: 'xxx', // 用户唯一 ID（可选）
+                reportApiSpeed: true, // 接口测速
+                reportAssetSpeed: true, // 静态资源测速
+                spa: true, // spa 应用页面跳转的时候开启 pv 计算
+            });
+        </script>
     </head>
     <body>
         <main>
@@ -100,15 +110,5 @@
                 </article>
             </div>
         </main>
-        <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"></script>
-        <script>
-            const aegis = new Aegis({
-                id: 'p0ya8uk3qzma1Zy9V9', // 上报 id
-                uin: 'xxx', // 用户唯一 ID（可选）
-                reportApiSpeed: true, // 接口测速
-                reportAssetSpeed: true, // 静态资源测速
-                spa: true, // spa 应用页面跳转的时候开启 pv 计算
-            });
-        </script>
     </body>
 </html>
