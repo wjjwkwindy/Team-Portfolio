@@ -5,21 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SKR SKR TEAM</title>
+        <script src="https://browser.sentry-cdn.com/7.0.0/bundle.tracing.min.js" integrity="sha384-+zViWRWnRAkk9/+V2CRRVm1tuQEGGqye3jiEC8SDdjaOyzmv86+kvpl6NnRy9QIF" crossorigin="anonymous"></script>
+        <script>
+            Sentry.init({
+                dsn: 'https://b8c4af19eef147939ee9d6b6ee719803@o1198799.ingest.sentry.io/6482516',
+                integrations: [new Sentry.BrowserTracing()],
+                tracesSampleRate: 1.0,
+            });
+        </script>
         <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-        <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"></script>
-        <script>
-            const aegis = new Aegis({
-                id: 'p0ya8uk3qzma1Zy9V9', // 上报 id
-                uin: 'xxx', // 用户唯一 ID（可选）
-                reportApiSpeed: true, // 接口测速
-                reportAssetSpeed: true, // 静态资源测速
-                spa: true, // spa 应用页面跳转的时候开启 pv 计算
-            });
-        </script>
     </head>
     <body>
         <main>
